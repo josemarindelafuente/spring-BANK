@@ -1,39 +1,43 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
-  mode: 'development',
-  devServer: {
-    open: true
-  },
+  entry: './src/index.js', //nombre del archivo de origen,
+
+  mode: 'development', //modo desarrollo 
+
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+      
     ],
   },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+  
+  devServer: {
+      open: true
   },
+
+  output: {
+    path: path.resolve(__dirname, 'dist'), //Dist es la carpeta donde se generara el archivo bundle.js
+    filename: 'bundle.js' //nombre del archivo de salida
+  },
+
   plugins: [
-    new CleanWebpackPlugin(),
-
+    new CleanWebpackPlugin(),  
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+        template: 'src/index.html',
+        filename: 'index.html',
     }),
-
-    new CopyWebpackPlugin([{
-      from:'./src/images',		to:'images'   
-    }]),
-
-    new CopyWebpackPlugin([{
-      from:'./src/css',		to:'css'   
-    }])
+    new CopyPlugin([
+      { from: './src/images', to: 'images' },
+      { from: './src/css', to: 'css' },
+    ]),
   ]
 };
