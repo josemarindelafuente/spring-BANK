@@ -1,0 +1,33 @@
+.navbar {  
+
+    background: #f85032;
+    background: -moz-linear-gradient(left, #f85032 0%, #cf4807 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #f85032), color-stop(100%, #cf4807));
+    background: -webkit-linear-gradient(left, #f85032 0%, #cf4807 100%);
+    background: -o-linear-gradient(left, #f85032 0%, #cf4807 100%);
+    background: -ms-linear-gradient(left, #f85032 0%, #cf4807 100%);
+    background: linear-gradient(to right, #f85032 0%, #cf4807 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#cf4807', GradientType=1 );
+    
+}
+
+.top-bar{
+    height: 25px;
+    background: #282828;
+}
+
+#aval {
+    background-color: #ffa232;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 45px;
+    color: #FFF;
+}
+
+#infofinanciera {
+    background-color:#e0e0e0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
