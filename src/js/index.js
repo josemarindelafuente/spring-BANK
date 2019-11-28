@@ -9,9 +9,6 @@ import '../css/style.css';
 
 
 
-
-
-
 /* evento click en boton login de usuarios*/ 
 var boton_form_login = document.getElementById('boton_form_login');
 boton_form_login.addEventListener("click", function (event) { 

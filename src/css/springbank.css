@@ -33,7 +33,7 @@
 .login_usuarios
 {
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 
@@ -53,4 +53,18 @@
     font-weight: bold;
     text-align: center;
     padding-bottom: 20px;
+}
+
+.titulos_rojos {
+    color: #f65030;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.titulo_login {
+    color: #f65030;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
 }

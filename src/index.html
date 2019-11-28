@@ -7,6 +7,7 @@
     <title>Spring BANK</title>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-social.css">
     <link rel="stylesheet" href="./css/springbank.css">
 
 
@@ -15,7 +16,8 @@
 <body>
 
 <!-- TOP BAR-->
-<div class="top-bar"></div>
+<div class="top-bar">     
+</div>
 <!-- FINAL TOP BAR-->
    
 
@@ -64,7 +66,7 @@
 <!-- SLIDER PRINCIPAL -->
 <section>
       <!--Carousel Wrapper-->
-<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
@@ -115,12 +117,13 @@
 <section class="login_usuarios">
 
   <div class="container">
+
       <div class="row">
 
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 px-5">
 
               <form class="form-signin" action="#!" >
-                <h1 class="h3 mb-3 font-weight-normal">Home Banking</h1>
+                <h2 class="titulos_rojos">Home Banking</h2>
 
                 <label for="var_login_cuil" class="sr-only">Ingresa tu Usuario</label>
 
@@ -140,9 +143,9 @@
             </div>
 
 
-            <div class="col-12 col-md-8 p-3">
+            <div class="col-12 col-md-6 px-5">
 
-              <h2>Tu Banco Digital.</h2>
+              <h2 class="titulos_rojos">Tu Banco Digital.</h2>
               <h3>Ahorrá tiempo y manejá el banco estés donde estés.</h3>
               <p>
                   Ahora tienes la posibilidad de revisar tus cuentas desde tu casa por medio de nuestro Home Banking. Todas las posibilidades al alcance tus manos. 
@@ -245,7 +248,12 @@
 
 
 
+<script>
+  $('.carousel').carousel({
+    interval: 2000
+  })
 
+</script>
 
 
 
