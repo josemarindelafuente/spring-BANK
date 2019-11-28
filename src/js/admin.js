@@ -1,6 +1,10 @@
 console.log ("Mensaje enviado desde admin.js");
 
 
+//verifico si la sesion de usuario esta activa
+if (sessionStorage.getItem('usuarioActivo') === null) {
+  window.location.href = "index.html";
+}
 
 
 

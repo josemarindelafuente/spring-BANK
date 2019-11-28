@@ -26,8 +26,8 @@ boton_form_login.addEventListener("click", function (event) {
 
     if ( var_login_user === "admin" && var_login_password === "1234") {
          console.log ('ustes es admin');
+         sessionStorage.setItem("usuarioActivo", "admin");
          window.location.href = "admin.html";
-         localStorage.setItem("admin", "jose marin de la fuente");
     } else {
         console.log ('ustes NO es admin');
 
