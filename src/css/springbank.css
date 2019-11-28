@@ -30,4 +30,27 @@
     padding-bottom: 50px;
 }
 
+.login_usuarios
+{
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
 
+
+.servicios_bancos {
+    background-image: url("../images/bg-servicios.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color:#e0e0e0;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.servicios_bancos .titulo {
+    color: #f65030;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}

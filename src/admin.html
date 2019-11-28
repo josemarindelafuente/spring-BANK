@@ -20,10 +20,9 @@
    
 
 <!-- MENU PRINCIPAL-->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
    <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="admin.html">
             <img src="./images/logo.png" width="150" alt="">
       </a>
 
@@ -36,26 +35,34 @@
       <div class="collapse navbar-collapse text-md-right" id="navbarNav">
             <ul class="navbar-nav">
                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Principal <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="admin.html">Principal <span class="sr-only">(current)</span></a>
                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Cuenta Sueldo</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Tarjetas</a>
-               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="#">Cuentas</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Seguros</a>
-              </li>
             </ul>
       </div>
    </div>   
 </nav>
 
 <!-- FIN MENU PRINCIPAL -->
+
+
+
+
+
+
+
+<!-- breadcrumb-->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="admin.html">Admin</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Principal</li>
+    </ol>
+</nav>
+<!-- Fin breadcrumb-->
+
+
+
+
+
 
 
 
@@ -68,19 +75,34 @@
 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptate, quia odit eius reiciendis illum. Quisquam, distinctio vel, eos, quasi reiciendis labore nihil laudantium delectus recusandae nulla fugit soluta vero!</p>
 
+
+            <h2>Lista de Clientes para aprobar</h2>
+
+            <p>
+
+                <table border="1">
+                    <thead>
+                      <tr>
+                        <th> Nombre </th>
+                        <th> Apellido </th>
+                        <th> User </th>
+                      </tr>
+                    </thead>
+                    <tbody id="body"></tbody>
+                  </table>
+
+            </p>
+
         </div>
 
         <div class="col-12 col-md-4">
 
                 <h2>Creacion de Usuarios</h2>
-    
                 <p>Sistema manual de creacion de cuentas de usuario de Sprin BANK.</p>
-
                 <p>
-
-                        <form class="form-signin" action="#!" >
+                        <form class="form-signin" action="#" method="post" id="formularioRegistracionManual" >
                   
-                        <label for="var_login_cuil" >Nombre de usuario</label>            
+                        <label for="var_login_user" >Nombre de usuario</label>            
                         <input type="text" id="var_login_user" name="var_login_user" class="form-control" placeholder="Ingresa el nombre de Usuario" required >
 
                         <br>
@@ -98,13 +120,24 @@
                         <br>
                         <button id="boton_admin_crea_usuario" class="btn btn-lg btn-primary btn-block" type="submit">Agregar Cliente</button>
                       </form>
-
                 </p>
     
         </div>
     </div>
 </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
