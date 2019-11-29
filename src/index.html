@@ -7,23 +7,18 @@
     <title>Spring BANK</title>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-social.css">
     <link rel="stylesheet" href="./css/springbank.css">
 
 
 
 </head>
-<body>
+<body class="body_navbar_fixed_top">
 
-<!-- TOP BAR-->
-<div class="top-bar">     
-</div>
-<!-- FINAL TOP BAR-->
-   
+  
 
 <!-- MENU PRINCIPAL-->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
    <div class="container">
       <a class="navbar-brand" href="index.html">
             <img src="./images/logo.png" width="150" alt="">
@@ -127,10 +122,10 @@
 
                 <label for="var_login_cuil" class="sr-only">Ingresa tu Usuario</label>
 
-                <input type="text" id="var_login_user" name="var_login_user" class="form-control" placeholder="Ingresa tu Usuario" required autofocus>
+                <input type="text" id="var_login_user" name="var_login_user" class="form-control" placeholder="Ingresa tu Usuario" required>
                 <br>
                 <label for="inputPassword" class="sr-only">Password</label>
-                <input type="password" id="var_login_password" name="var_login_password" class="form-control" placeholder="Ingresa tu Contraseña" required autofocus>
+                <input type="password" id="var_login_password" name="var_login_password" class="form-control" placeholder="Ingresa tu Contraseña" required>
 
                 <div class="checkbox mb-3">
                   <label>
@@ -266,54 +261,39 @@
 
 
 
-            <form class="needs-validation" novalidate>
+            <form class="form-signin" action="#!">
                 <div class="form-row">
                   <div class="col-6 col-md-4 mb-3">
-                    <label for="validationTooltip01">Nombre</label>
-                    <input type="text" class="form-control" id="validationTooltip01" placeholder="Tu Nombre" required>
-                    <div class="valid-tooltip">
-                      Looks good!
-                    </div>
+                    <label for="var_register_nombre">Nombre</label>
+                    <input type="text" class="form-control" id="var_register_nombre" name="var_register_nombre" placeholder="Tu Nombre" required>
                   </div>
                   
                   <div class="col-6 col-md-4 mb-3">
-                    <label for="validationTooltip02">Apellido</label>
-                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Tu Apellido" required>
-                    <div class="valid-tooltip">
-                      Looks good!
-                    </div>
+                    <label for="var_register_apellido">Apellido</label>
+                    <input type="text" class="form-control" id="var_register_apellido" name="var_register_apellido" placeholder="Tu Apellido" required>
                   </div>
 
                   <div class="col-md-4 mb-3">
-                    <label for="validationTooltipUsername">Nombre de Usuario</label>
+                    <label for="var_register_user">Nombre de Usuario</label>
                     <div class="input-group">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        <span class="input-group-text">@</span>
                       </div>
-                      <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                      <div class="invalid-tooltip">
-                        Please choose a unique and valid username.
-                      </div>
+                      <input type="text" class="form-control" id="var_register_user" name="var_register_user" aria-describedby="var_register_user" required>
                     </div>
                   </div>
                 
                 </div>
                 <div class="form-row">
                   <div class="col-12">
-                    <label for="validationTooltip03">Correo Electrónico</label>
-                    <input type="text" class="form-control" id="validationTooltip03" required>
-                    <div class="invalid-tooltip">
-                      Please provide a valid city.
-                    </div>
+                    <label for="var_register_email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="var_register_email" name="var_register_email" required>
                   </div>
 
 
                   <div class="col-12 mb-3">
-                    <label for="validationTooltip05">DNI</label>
-                    <input type="text" class="form-control" id="validationTooltip05" required>
-                    <div class="invalid-tooltip">
-                      Please provide a valid zip.
-                    </div>
+                    <label for="var_register_dni">DNI</label>
+                    <input type="number" class="form-control" id="var_register_dni" name="var_register_dni" required>
                   </div>
 
                 </div>

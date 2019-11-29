@@ -1,3 +1,8 @@
+.body_navbar_fixed_top { 
+    /*solucion para el fixed-top del navbar*/
+    padding-top: 68px; 
+}
+
 .navbar {  
 
     background: #f85032;
@@ -11,9 +16,15 @@
     
 }
 
-.top-bar{
-    height: 25px;
-    background: #282828;
+
+/*sticky header position*/
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 #aval {
