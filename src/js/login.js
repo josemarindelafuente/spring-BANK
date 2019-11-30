@@ -1,17 +1,25 @@
-console.log ('este es login.js');
-
 export class Login {
 
-    constructor(){
+    constructor(){}
 
-    }
+/////////////////////////////////////////////////////
+//                LOGIN USUARIOS                   //
+/////////////////////////////////////////////////////
+static loginUsuario (username, password) {
 
+    if ( username === "admin" && password === "1234") {
 
+        sessionStorage.setItem("usuarioActivo", "admin"); 
+        return true;        
+        //window.location.href = "admin.html"; 
 
-static loginUsuario (username, passwprd) {
-return console.log ("ejecutando metodo de clase" + " " + username + " " + passwprd );
+        } else {
+
+                return false;
+
+                }
+
 }
-
 
 
 
