@@ -9,7 +9,8 @@ module.exports = {
 
   entry: {
     main : './src/js/index.js',
-		admin: './src/js/admin.js'
+    admin: './src/js/admin.js',
+    panel_clientes: './src/js/panel_clientes.js'
   },
 
   output: {
@@ -41,20 +42,29 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(),  
-    new HtmlWebpackPlugin({
-        template: 'src/index.html',
-        filename: 'index.html',
-        chunks: ['main'],
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/admin.html',
-      filename: 'admin.html',
-      chunks: ['admin']
-  }),
-    new CopyPlugin([
-      { from: './src/images', to: 'images' },
-      { from: './src/css', to: 'css' },
-    ]),
+                new CleanWebpackPlugin(), 
+
+                new HtmlWebpackPlugin({
+                  template: 'src/index.html',
+                  filename: 'index.html',
+                  chunks: ['main'],
+                }),
+                
+                new HtmlWebpackPlugin({
+                  template: 'src/admin.html',
+                  filename: 'admin.html',
+                  chunks: ['admin']
+                }),
+
+                new HtmlWebpackPlugin({
+                  template: 'src/panel_clientes.html',
+                  filename: 'panel_clientes.html',
+                  chunks: ['panel_clientes']
+                }),
+
+                new CopyPlugin([
+                  { from: './src/images', to: 'images' },
+                  { from: './src/css', to: 'css' },
+                ]),
   ]
 };

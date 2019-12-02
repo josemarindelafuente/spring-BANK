@@ -14,6 +14,10 @@ boton_form_login.addEventListener("click", function (event) {
     let var_login_user = document.querySelector("#var_login_user").value;
     let var_login_password = document.querySelector("#var_login_password").value;
 
+
+    Login.loginUsuario(var_login_user, var_login_password);
+
+            /*
             if ( Login.loginUsuario(var_login_user, var_login_password) ) {
 
                 window.location.href = "admin.html";
@@ -22,6 +26,6 @@ boton_form_login.addEventListener("click", function (event) {
 
                     window.location.href = "index.html";
                     
-                    }
+                    }*/
 
 });

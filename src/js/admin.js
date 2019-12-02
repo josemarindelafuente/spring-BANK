@@ -22,6 +22,7 @@ var tableData = todosLosCliente.map( cliente => (
       <td>${cliente.nombre}</td>
       <td>${cliente.apellido}</td>
       <td>${cliente.usuario}</td>
+      <td>${cliente.password}</td>
     </tr>
   `
 )).join('');
